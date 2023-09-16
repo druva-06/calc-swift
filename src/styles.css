@@ -9,13 +9,18 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .App{
     padding: 80px;
     border-radius: 15px;
     box-shadow: -30px 20px 100px 10px rgba(251, 24, 78, 0.47), 30px -20px 100px 10px rgba(0, 87, 255, 0.47);
-   
+    transition: 0.3s;
+}
+
+.App:hover{
+    transform: scale(1.1);
 }
 
 .calculator{
@@ -42,6 +47,11 @@
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.operations > p:hover{
+    transform: scale(1.2);
 }
 
 .output{
@@ -49,6 +59,12 @@
     flex-direction: column;
     row-gap: 10px;
     align-items: center;
+}
+
+.output > p{
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
 .output > p{
